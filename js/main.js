@@ -8,3 +8,7 @@
 //         hacker.style.transform = "translate(-" + x * 70 + "px, -" + y * 70 + "px)";
 //     };
 // })
+AOS.init({
+  startEvent: 'DOMContentLoaded',
+});
+

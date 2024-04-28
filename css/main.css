@@ -213,6 +213,7 @@ html {
   background: #1a1f32
 }
 body {
+  overflow: hidden;
   background: #1a1f32;
   font-family: "Druk Cyr";
   color: #fff;
@@ -279,6 +280,14 @@ a {
   .container {
     padding: 0 15px
   }
+}
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  -webkit-scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  position: relative
 }
 .header {
   position: absolute;
@@ -364,6 +373,7 @@ a {
   }
 }
 .top {
+  scroll-snap-align: center;
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -581,6 +591,7 @@ a {
   }
 }
 .bottom {
+  scroll-snap-align: center;
   position: relative;
   width: 100vw;
   height: 100vh;
